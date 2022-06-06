@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "../src/styles/styles.css";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "../src/styles/theme";
+import { Navigate } from "react-router-dom";
+import { Layout } from "../src/components/Layout";
+import { Hot } from "../src/routes/Hot";
+import { Regular } from "../src/routes/Regular";
+import { ErrorPage } from "../src/components/ErrorPage";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MemeGenerator from "./routes/MemeGenerator";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/regular" />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="hot" element={<Hot />} />
+            <Route path="regular" element={<Regular />} />
+            <Route path="memegenerator" element={<MemeGenerator />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 

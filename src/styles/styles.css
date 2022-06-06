@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  margin-top: 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: #282c34;
+  width: 23%;
+  max-width: 400px;
+  margin-left: 3%;
+  height: 100%;
+}
+p {
+  color: whitesmoke;
+  font-size: 50px;
+}
+
+.logo {
+  height: 35%;
+  width: 35%;
+  padding-top: 10px;
+}
+
+.linkStyle {
+  margin: 10px 5%;
+  padding: 10px;
+  background-color: black;
+  border-radius: 5px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+  font-variant: normal;
+  letter-spacing: 0.08em;
+}
+
+a:hover {
+  color: grey;
+}
+
+a.active {
+  background-color: darkgray;
+  color: black;
+  cursor: default;
+}
+
+h2 {
+  font-variant: normal;
+  text-shadow: -1px 0 darkgray, 0 1px darkgray, 1px 0 darkgray, 0 -1px darkgray;
+  padding-left: 35px;
+}
+
+.star {
+  visibility: hidden;
+  font-size: 45px;
+  cursor: pointer;
+  margin-right: 5%;
+
+}
+
+.star:before {
+  content: "\2606";
+  visibility: visible;
+  color: white;
+
+}
+
+.star:checked:before {
+  content: "\2605";
+  color: white;
+}
+
+@media screen and (min-width: 1400px) {
+  nav {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  nav {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  nav {
+    margin-left: 14%;
+  }
+}
+
+.meme {
+  position: relative;
+  width: 39%;
+  margin: auto;
+}
+ 
+.meme > img {
+  width: 100%;
+}
+ 
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000;
+}
+ 
+.meme > .bottom {
+  bottom:0;
+}
+ 
+.meme > .top {
+  top: 0;
+}
+ 
+form {
+  padding-top: 45px;
+  text-align: center;
+}
+
+button {
+  color: whitesmoke;
+  background-color: #282c34;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: justify;
+  
+  
+}
+input {
+  color: whitesmoke;
+  background-color: #282c34;
+  font-size: 20px;
+  cursor: pointer;
+text-align: justify;
+}
