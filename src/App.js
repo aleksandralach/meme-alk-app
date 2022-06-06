@@ -6,7 +6,6 @@ import { Layout } from "../src/components/Layout";
 import { Hot } from "../src/routes/Hot";
 import { Regular } from "../src/routes/Regular";
 import { ErrorPage } from "../src/components/ErrorPage";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MemeGenerator from "./routes/MemeGenerator";
 

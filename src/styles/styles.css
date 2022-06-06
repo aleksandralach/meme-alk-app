@@ -22,6 +22,7 @@ nav {
   margin-left: 3%;
   height: 100%;
 }
+
 p {
   color: whitesmoke;
   font-size: 50px;
@@ -104,12 +105,12 @@ h2 {
   width: 39%;
   margin: auto;
 }
- 
-.meme > img {
+
+.meme>img {
   width: 100%;
 }
- 
-.meme > h2 {
+
+.meme>h2 {
   position: absolute;
   width: 80%;
   text-align: center;
@@ -124,15 +125,15 @@ h2 {
   letter-spacing: 1px;
   text-shadow: 2px 2px 0 #000;
 }
- 
-.meme > .bottom {
-  bottom:0;
+
+.meme>.bottom {
+  bottom: 0;
 }
- 
-.meme > .top {
+
+.meme>.top {
   top: 0;
 }
- 
+
 form {
   padding-top: 45px;
   text-align: center;
@@ -144,13 +145,14 @@ button {
   font-size: 20px;
   cursor: pointer;
   text-align: justify;
-  
-  
+
+
 }
+
 input {
   color: whitesmoke;
   background-color: #282c34;
   font-size: 20px;
   cursor: pointer;
-text-align: justify;
+  text-align: justify;
 }
